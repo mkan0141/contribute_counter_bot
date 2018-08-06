@@ -3,16 +3,16 @@ import requests
 import twitter
 import datetime
 
-from config import *
+from config import config
 
 class Bot():
     def __init__(self):
-        self.auth = twitter.OAuth(consumer_key=CONSUMER_KEY,
-                                consumer_secret=CONSUMER_KEY_SECRET,
-                                token=ACCESS_TOKEN,
-                                token_secret=ACCESS_TOKEN_SECRET)
+        self.auth = twitter.OAuth(consumer_key=config.CONSUMER_KEY,
+                                consumer_secret=config.CONSUMER_KEY_SECRET,
+                                token=config.ACCESS_TOKEN,
+                                token_secret=config.ACCESS_TOKEN_SECRET)
         self.twitter = twitter.Twitter(auth=self.auth)
-        self.user_id=GITHUB_USER_ID
+        self.user_id=config.GITHUB_USER_ID
         self.day = datetime.date.today().day
         self.month = datetime.date.today().month
 

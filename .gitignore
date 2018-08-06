@@ -1,5 +1,5 @@
 # file
 .DS_Store
-config/config_d.py
+config/*
 # directory
 __pycache__/

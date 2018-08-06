@@ -1,4 +1,6 @@
-CONSUMER_KEY='Consumer Key'
-CONSUMER_SECRET='Consumer Secret'
-ACCESS_TOKEN_KEY='Access Token'
-ACCESS_TOKEN_SECRET='Access Token Secret'
+CONSUMER_KEY = "your Consumer Key"
+CONSUMER_KEY_SECRET = "your Consumer Secret Key"
+ACCESS_TOKEN = "your Access Token"
+ACCESS_TOKEN_SECRET = "your Access Token Secret"
+
+GITHUB_USER_ID="your github id"
